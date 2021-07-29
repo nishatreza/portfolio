@@ -101,8 +101,8 @@ header {
 }
 
 .agile_banner.bg1 {
-    background: url(../images/banner.jpg) center no-repeat;
-    /* background: url(../images/banner1.jpg) center no-repeat; */
+    /* background: url(../images/banner.jpg) center no-repeat; */
+    background: url(../images/banner4.jpeg) center no-repeat;
 
     background-size: cover;
     -webkit-background-size: cover;
