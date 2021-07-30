@@ -500,7 +500,8 @@ input[type=range]::-ms-track {
     position: absolute;
     top: 8%;
     left: 34%;
-    color: #333;
+    /* color: #333; */
+    color: rgba(0, 0, 0, 0.856);
     z-index: 2;
     font-weight: 700;
     font-size: 4.5em;
