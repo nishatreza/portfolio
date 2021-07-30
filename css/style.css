@@ -207,7 +207,8 @@ span.banner_text_w3ls {
 }
 
 .inner-banner-agile.skillset {
-    background: #dc143c url(../images/bg.png) center no-repeat;
+    /* background: #dc143c url(../images/bg.png) center no-repeat; */
+    background: #827b88 url(../images/bg.png) center no-repeat;
     background-size: cover;
 }
 
