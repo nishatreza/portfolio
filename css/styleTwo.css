@@ -1,13 +1,10 @@
-.logo_wthree .logo_header{
-    width: 130px;
-    height: 130px;
-}
+
 
 @media screen and (max-width: 991px) {
     .agile_banner .bnr_list_w3 {
-        /* margin-top: 200px; */
+
         position: absolute;
-        /* top: 55%; */
+    
         top: 450px;
 
     }
