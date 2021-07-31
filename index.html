@@ -1,19 +1,13 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 
 <!DOCTYPE html>
 <html lang="zxx">
 
 <head>
-    <title>Recognize Personal Category Bootstrap Responsive Template | Home :: W3layouts</title>
+    <title>Mobasher Reza | Home</title>
     <!-- Meta tag Keywords -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8" />
-    <meta name="keywords" content="Recognize Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <meta name="keywords" content="" />
     <script>
         addEventListener("load", function() {
             setTimeout(hideURLbar, 0);
@@ -36,6 +30,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <link rel="stylesheet" href="css/aos.css">
     <link href='css/aos-animation.css' rel='stylesheet prefetch' type="text/css" media="all" />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/styleTwo.css" type="text/css" media="all" />
+
     <!-- Style-CSS -->
     <link rel="stylesheet" href="css/fontawesome-all.css">
     <!-- Font-Awesome-Icons-CSS -->
@@ -53,12 +49,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div id="brand">
                 <div id="logo">
                     <a href="index.html">
-                      <i class="fas fa-crosshairs"></i>
+                      <!-- <i class="fas fa-crosshairs"></i> -->
+                      <i class="far fa-smile"></i>
                     </a>
                 </div>
                 <div id="word-mark">
                     <h1>
-                        <a href="index.html">Recognize</a>
+                        <a href="index.html">Howdy!</a>
                     </h1>
                 </div>
             </div>
@@ -86,11 +83,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <li>
                         <a class="scroll" href="#contact">Contact</a>
                     </li>
-                    <li class="login">
+                    <!-- <li class="login">
                         <button type="button" class="btn login-btn text-uppercase " data-toggle="modal" data-target="#exampleModalCenter">
                           Login
                         </button>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
             <div class="clearfix"></div>
@@ -98,21 +95,26 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <!-- //nav -->
         <!-- banner -->
         <div class="banner_section">
-            <div class="snow-container">
+            <!-- <div class="snow-container">
                 <div class="snow foreground"></div>
                 <div class="snow foreground layered"></div>
                 <div class="snow middleground"></div>
                 <div class="snow middleground layered"></div>
                 <div class="snow background"></div>
                 <div class="snow background layered"></div>
-            </div>
+            </div> -->
             <div class="banner-info text-uppercase">
                 <h6 data-aos="fade-right">Introduction</h6>
-                <h5 data-aos="fade-right">Hello, my name is Daniel</h5>
-                <h3 data-text="I'm a Programmer">I'm a Programmer</h3>
+                <h5 data-aos="fade-right">Hello, my name is Mobasher Reza</h5>
+                <h5 id="text" class="banner_text_w3ls" style="color: white;"></h5>
+
+                <!-- <h3 data-text="I'm a Programmer">I'm a Programmer</h3> -->
+<br>
+<br>
+
                 <div class="ban-buttons mt-3" data-aos="fade-right">
                     <a class="btn work scroll" href="#projects">My Work</a>
-                    <a class="btn work scroll active" href="#contact">Here me</a>
+                    <a class="btn work scroll active" href="#contact">Hire me</a>
                 </div>
 
             </div>
@@ -774,6 +776,54 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <script src="js/jquery-2.2.3.min.js"></script>
     <!-- banner-type-text -->
     <script src='js/aos.js'></script>
+    <script>
+        //text effect
+
+        document.addEventListener('DOMContentLoaded', function (event) {
+
+            var dataText = [
+                "Hi there, I am  Mobasher Reza.",
+                "I'm  a Full Stack Web Developer.",
+                "I have strong knowledge in web development",
+                "As well as in Relational Database Design & SQL",
+                "And in Advanced Software Programming"
+            ];
+
+            // type one text in the typwriter
+            // keeps calling itself until the text is finished
+            function typeWriter(text, i, fnCallback) {
+                // chekc if text isn't finished yet
+                if (i < (text.length)) {
+                    // add next character to h1
+                    document.getElementById("text").innerHTML = text.substring(0, i + 1) +
+                        '<span aria-hidden="true" class="banner_text_w3ls"></span>';
+
+                    // wait for a while and call this function again for next character
+                    setTimeout(function () {
+                        typeWriter(text, i + 1, fnCallback)
+                    }, 50);
+                }
+                // text finished, call callback if there is a callback function
+                else if (typeof fnCallback == 'function') {
+                    // call callback after timeout
+                    setTimeout(fnCallback, 2000);
+                }
+            }
+            // start a typewriter animation for a text in the dataText array
+            function StartTextAnimation(i) {
+                // check if dataText[i] exists
+                if (i < dataText[i].length) {
+                    // text exists! start typewriter animation
+                    typeWriter(dataText[i], 0, function () {
+                        // after callback (and whole text has been animated), start next text
+                        StartTextAnimation(i + 1);
+                    });
+                }
+            }
+            // start the text animation
+            StartTextAnimation(0);
+        });
+    </script>
     <script>
         AOS.init({
             easing: 'ease-out-back',
