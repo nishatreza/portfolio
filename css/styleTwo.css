@@ -6,3 +6,29 @@ span.banner_text_w3ls {
 .about_banner_img_div img {
   border: 20px solid #000;
 }
+
+@media screen and (max-width: 540px) {
+  .banner_section {
+    padding-bottom: 100px !important;
+    height: 70vw !important;
+  }
+}
+@media screen and (max-width: 416px) {
+  .banner_section {
+    padding-bottom: 100px !important;
+    height: 80vw !important;
+  }
+}
+
+@media screen and (max-width: 383px) {
+  .banner_section {
+    padding-bottom: 100px !important;
+    height: 90vw !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  .banner_section .ban-buttons {
+    position: relative;
+    bottom: 10px !important;
+  }
+}
