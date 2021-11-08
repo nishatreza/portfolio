@@ -1,5 +1,8 @@
 span.banner_text_w3ls {
-    border-right: .05em solid;
-    animation: caret 1s steps(1) infinite;
-    color: white;
+  border-right: 0.05em solid;
+  animation: caret 1s steps(1) infinite;
+  color: white;
+}
+.about_banner_img_div img {
+  border: 20px solid #000;
 }
