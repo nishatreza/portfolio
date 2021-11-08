@@ -32,3 +32,14 @@ span.banner_text_w3ls {
     bottom: 10px !important;
   }
 }
+/* and (min-width: 481px) */
+
+@media screen and (max-width: 537px) {
+  .contact {
+    padding-bottom: 300px !important;
+    height: 800px !important;
+  }
+}
+.about_sec {
+  padding-top: 2em !important;
+}
